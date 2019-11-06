@@ -1,0 +1,19 @@
+@startuml
+Main -- Human
+Human <|-- Yuusya
+Human <|-- Wizard
+Human <|-- Enemy
+class Main{
+public static void main(String[] args)
+private static void status(Human target)
+}
+class Human{
+protected int HP
+protected int MP
+protected int power
+protected int magic_power
+protected int MP_cost
+protected void atack(Human target)
+protected void magic_atack(Human target)
+}
+@enduml
